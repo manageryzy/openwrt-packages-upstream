@@ -38,7 +38,7 @@ define Package/libredblack/description
 endef
 
 CONFIGURE_ARGS += --without-rbgen
-CONFIGURE_VARS += lt_cv_prog_cc_pic=$(FPIC)
+CONFIGURE_VARS += lt_cv_prog_cc_pic="$(FPIC)"
 MAKE_FLAGS += CFLAGS="$(TARGET_CFLAGS)"
 
 define Build/InstallDev
